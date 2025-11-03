@@ -3,8 +3,15 @@
   "outputDirectory": ".",
   "rewrites": [
     {
+      "source": "/api/(.*)",
+      "destination": "https://brewitrealgood.zombierobotdogs.com/api/$1"
+    }
+  ],
+  "redirects": [
+    {
       "source": "/(.*)",
-      "destination": "https://brewitrealgood.zombierobotdogs.com/$1"
+      "destination": "https://brewitrealgood.zombierobotdogs.com/$1",
+      "permanent": false
     }
   ]
 }
